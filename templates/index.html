@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="{{ url_for('static',filename='images/lgbg.jpg')}}" type="image/jpg">
+
+    <title>Devakumar V | Portfolio</title>
+    <!-- StyleSheets -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}" />
+
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="logo">Devakumar <span class="yellow">V</span></a>
+
+      <nav class="navbar">
+          <a href="#aboutx">About</a>
+          <a href="#project">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#paper">Papers</a>
+          <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Hamburger -->
+      <div class="hamburger">
+        <img src="{{ url_for('static',filename='images/grid-outline.svg')}}" alt="" />
+      </div>
+    </header>
+
+    <!-- About-->
+        <section class="services" id="aboutx" style="background-color:var(--white)">
+            <br/><br/><br/>
+      <div class="top">
+        <h2 style="line-height:1.5"><span class="yellow">About Me</span></h2>
+          <br/>
+          <h3>Devakumar V</h3><br/>
+          <h4>AMRITA '23, B.TECH Student</h4>
+          <br/>
+        <p style="line-height:1.4">
+         A fresh engineering graduate, seeking an entry level position in a dynamic organization, preferably in the field of computing, with special interests in areas like Networking, Cybersecurity and related fields, resulting in meaningful contribution towards organizational growth along with personal and professional development
+         </p><br/>
+           <p style="line-height:1.5"> <b>Amrita Vishwa Vidhyapeetham (AMRITA)</b><br/>
+            Bachelor of Technology in Computer Science and Engineering<br/>
+           2019-2023</p>
+          <br/>
+              <a href="https://drive.google.com/file/d/1hzuUYR1RrGdn2IKiqxn1TZdRwAu9JkNN/view?usp=sharing" target="_blank"><img src="{{ url_for('static',filename='images/resume.png')}}" /><h3>Download Resume</h3></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+              <a href="https://twitter.com/dk_v27" target="_blank"><img src="{{ url_for('static',filename='images/twitter.svg')}}" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://www.facebook.com/profile.php?id=100010102690820" target="_blank"><img src="{{ url_for('static',filename='images/facebook.svg')}}" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/dk0027" target="_blank"><img src="{{ url_for('static',filename='images/github.svg')}}" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://www.linkedin.com/in/devakumar-v-b45067197/" target="_blank"><img src="{{ url_for('static',filename='images/linkedin.svg')}}" /></a>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="services" id="project">
+      <div class="top">
+        <h2>Projects</h2>
+        <p>
+         Here you can see some of the projects I've done on my own time.
+        </p>
+      </div>
+
+      <div class="bottom">
+        <div class="box" style=" background-image: url('{{ url_for('static',filename='images/counselling.jpg')}}');background-repeat: no-repeat;  background-size: cover;">
+
+          <h4>Professional Counselling Website</h4>
+          <p>
+            To provide counselling for customers, which involves counselling for students, personal life, addiction, parenting etc.
+          </p>
+          <a href="#popup1">View More <img src="{{ url_for('static',filename='images/btn-arrow.svg')}}" alt="" /> </a>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+        <br/>
+        <br/>
+		<h2>Professional Counselling Website</h2>
+        <br/>
+		<a class="close" href="#project">&times;</a>
+		<div class="content">
+
+	<b>Duration/Period</b>: 6 Months
+      <br/><br/>
+	<b>Objective</b>: To provide counselling for customers, which involves counselling for students, personal life, addiction, parenting etc..
+       <br/><br/>
+	<b>Tools or techniques used</b>: HTML, CSS, JS, Bootstrap (VS Code)
+       <br/><br/>
+	<b>Outcome</b>: Successfully deployed a Professional Counselling Website using the above mentioned tools
+       <br/><br/>
+	<b>Link</b>: https://changecounsel.netlify.app/new5.html
+       <br/><br/>
+		</div>
+	</div>
+</div>
+        </div>
+        <div class="box" style=" background-image: url('{{ url_for('static',filename='images/timetable.webp')}}');background-repeat: no-repeat;  background-size: cover;">
+
+          <h4>Time Table Management System</h4>
+          <p>
+            To manage the details of Timetable, Faculty, Subject, Student,etc. and manages all the information about Timetable, Semester, Course.
+
+          </p>
+          <a href="#popup2">View More <img src="{{ url_for('static',filename='images/btn-arrow.svg')}}" alt="" /> </a>
+            <div id="popup2" class="overlay">
+	<div class="popup">
+        <br/>
+        <br/>
+		<h2>Time Table Management System</h2>
+        <br/>
+		<a class="close" href="#project">&times;</a>
+		<div class="content">
+
+	<b>Duration/Period</b>: 6 Months
+      <br/><br/>
+	<b>Objective</b>: To manage the details of Timetable, Faculty, Subject, Student, Course. It manages all the information about Timetable, Semester, Course, Timetable. The project is totally built at administrative end and thus only the administrator is guaranteed the access
+       <br/><br/>
+	<b>Tools or techniques used</b>: Appache Netbeans (Java Swing), Xampp(My Sql Database)
+       <br/><br/>
+	<b>Outcome</b>: Successfully Created a Desktop Time Table Management System Application using the above mentioned tools.
+       <br/><br/>
+	<b>Link</b>: https://github.com/dk0027/ttms
+       <br/><br/>
+		</div>
+	</div>
+</div>
+        </div>
+        <div class="box" style=" background-image: url('{{ url_for('static',filename='images/creditcard.png')}}'); background-repeat: no-repeat; background-size: cover;">
+
+          <h4>Credit Card Fraud Detection System</h4>
+          <p>
+            To build a data science model to detect credit card frauds which saves a lot of money for banks.
+          </p>
+          <a href="#popup3">View More <img src="{{ url_for('static',filename='images/btn-arrow.svg')}}" alt="" /> </a>
+            <div id="popup3" class="overlay">
+	<div class="popup">
+        <br/>
+        <br/>
+		<h2>Credit Card Fraud Detection System</h2>
+        <br/>
+		<a class="close" href="#project">&times;</a>
+		<div class="content">
+
+	<b>Duration/Period</b>: 4 Months
+      <br/><br/>
+	<b>Objective</b>: Project aims at building a data science model to detect credit card frauds which saves a lot of money for banks.
+       <br/><br/>
+	<b>Tools or techniques used</b>: Google Colab, ML Algorithms
+       <br/><br/>
+	<b>Outcome</b>: Successfully Created a Credit Card Fraud Detection System
+       <br/><br/>
+	<b>Link</b>: https://colab.research.google.com/drive/1SLEroHe1XBE-1EjhC5aWvJPtMv-DCKVO?usp=sharing
+       <br/><br/>
+		</div>
+	</div>
+</div>
+        </div>
+         <div class="box" style=" background-image: url('{{ url_for('static',filename='images/chatapp.png')}}'); background-repeat: no-repeat;  background-size: cover;">
+
+          <h4>Chatting App</h4>
+          <p>
+           To Build a chatting Application in Android.
+          </p>
+          <a href="#popup4">View More <img src="{{ url_for('static',filename='images/btn-arrow.svg')}}" alt="" /> </a>
+             <div id="popup4" class="overlay">
+	<div class="popup">
+        <br/>
+        <br/>
+		<h2>Chatting App</h2>
+        <br/>
+		<a class="close" href="#project">&times;</a>
+		<div class="content">
+
+	<b>Duration/Period</b>: 2 Months
+      <br/><br/>
+	<b>Objective</b>: To Build a chatting Application in Android.
+       <br/><br/>
+	<b>Tools or techniques used</b>: Java, SQLite Database, Firebase, Android Studio
+       <br/><br/>
+	<b>Outcome</b>: Successfully developed a Chatting Android Application.
+       <br/><br/>
+	<b>Link</b>: https://github.com/dk0027/chatapp
+       <br/><br/>
+		</div>
+	</div>
+</div>
+        </div>
+         <div class="box" style=" background-image: url('{{ url_for('static',filename='images/ner.png')}}'); background-repeat: no-repeat;  background-size: cover;">
+
+          <h4>NER from CoVID Research Articles</h4>
+          <p>
+          To Develop a ML model to perform Named Entity Recognition to help find relevant publications and to aid in downstream NLP tasks.
+          </p>
+          <a href="#popup5">View More <img src="{{ url_for('static',filename='images/btn-arrow.svg')}}" alt="" /> </a>
+             <div id="popup5" class="overlay">
+	<div class="popup">
+        <br/>
+        <br/>
+		<h2>NER from CoVID Research Articles</h2>
+        <br/>
+		<a class="close" href="#project">&times;</a>
+		<div class="content">
+
+	<b>Duration/Period</b>: 3 Months
+      <br/><br/>
+	<b>Objective</b>: Developing an ML model to perform Named Entity Recognition to help find relevant publications and to aid in downstream NLP tasks.
+       <br/><br/>
+	<b>Tools or techniques used</b>: Google Colab, spaCy Library, ML Algorithms
+       <br/><br/>
+	<b>Outcome</b>: Successfully developed a ML Model to perform NER.
+       <br/><br/>
+	<b>Link</b>: https://colab.research.google.com/drive/1eZJWuE0JObCagEX-x5NlM_zVZkJUmlef?usp=sharing
+       <br/><br/>
+		</div>
+	</div>
+</div>
+        </div>
+         <div class="box" style=" background-image: url('{{ url_for('static',filename='images/food.jpg')}}');background-repeat: no-repeat;  background-size: cover;">
+
+          <h4>Hotel Ordering Application</h4>
+          <p>
+           To Develop a Online Ordering website using Scrum Methodology [Agile] with 2 Sprints.
+          </p>
+          <a href="#popup6">View More <img src="{{ url_for('static',filename='images/btn-arrow.svg')}}" alt="" /> </a>
+             <div id="popup6" class="overlay">
+	<div class="popup">
+        <br/>
+        <br/>
+		<h2>Hotel Ordering Application</h2>
+        <br/>
+		<a class="close" href="#project">&times;</a>
+		<div class="content">
+
+	<b>Duration/Period</b>: 4 Months
+      <br/><br/>
+	<b>Objective</b>: To Develop a Online Ordering website using Scrum Methodology [Agile] with 2 Sprints and to test the Wesbsite with appropriate testing tools.
+       <br/><br/>
+	<b>Tools or techniques used</b>: HTML, CSS, JS, Bootstrap, PHP, MySQL, Heroku, InfinityFree ; Testing Tools  : Katalan Studio, PHPstan, boomq.io.
+       <br/><br/>
+	<b>Outcome</b>: Successfully developed a hotel ordering website and tested it with testing tools
+       <br/><br/>
+	<b>Link</b>: http://grub-hoa.epizy.com/Hotel-Ordering-Application/
+       <br/><br/>
+		</div>
+	</div>
+</div>
+        </div>
+          <div class="box" style=" background-image: url('{{ url_for('static',filename='images/iot.webp')}}'); background-repeat: no-repeat;  background-size: cover;">
+
+          <h4>IoT - Smart Mailbox</h4>
+          <p>
+           To Develop a smart mailbox using IoT to save time on checking your mailbox by simply sending you notifications to your mobile phone if you get a new mail.
+          </p><br/>
+          <a href="#popup7">View More <img src="{{ url_for('static',filename='images/btn-arrow.svg')}}" alt="" /> </a>
+             <div id="popup7" class="overlay">
+	<div class="popup">
+        <br/>
+        <br/>
+		<h2>IoT - Smart Mailbox</h2>
+        <br/>
+		<a class="close" href="#project">&times;</a>
+		<div class="content">
+
+	<b>Duration/Period</b>: 3 Months
+      <br/><br/>
+	<b>Objective</b>: To develop an IoT enabled Smart Mail Box with Mail Intimation and classify the mails as packages or letters/Newspapers
+       <br/><br/>
+	<b>Tools or techniques used</b>: Arduino IDE, Ultrasonic Sensor, PIR Sensor,Magnetic Reed Switch, Loadcell, IFTTT, ESP32
+       <br/><br/>
+	<b>Outcome</b>: Successfully developed a smart mailbox using ESP32 NodeMCU and using Esp32 Cam to capture Products/Mails and using Electromagnetic lock to prevent theft.
+       <br/><br/>
+		</div>
+	</div>
+</div>
+        </div>
+      </div>
+    </section>
+
+<!-- Skills -->
+   <section class="services" id="skills" style="background-color:var(--white)">
+      <div class="top">
+        <h2><span class="yellow">Skills </span></h2>
+        <p>
+         Below are some of my skills, and I'm always looking to learn more.
+        </p>
+      </div>
+       <div class="row">
+           <div class="column">
+        <div class="container">
+        <div class="skill-box">
+            <span class="title">Python</span>
+            <div class="skill-bar">
+                <span class="skill-per python"></span>
+            </div>
+        </div>
+             <div class="skill-box">
+            <span class="title">HTML, CSS, JavaScript</span>
+            <div class="skill-bar">
+                <span class="skill-per html">
+                </span>
+            </div>
+        </div>
+ <div class="skill-box">
+            <span class="title">R</span>
+
+            <div class="skill-bar">
+                <span class="skill-per javascript">
+
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">Java, C++, C, MySQL</span>
+            <div class="skill-bar">
+                <span class="skill-per css">
+
+                </span>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <span class="title">NodeJS, ReactJS</span>
+
+            <div class="skill-bar">
+                <span class="skill-per nodejs">
+
+                </span>
+            </div>
+        </div>
+    </div>
+  </div>
+           <!--column 2-->
+           <div class="column">
+        <div class="container">
+
+
+ <div class="skill-box">
+            <span class="title">Flask</span>
+
+            <div class="skill-bar">
+                <span class="skill-per javascript">
+
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">AWS(EC2, S3), Heroku, Netlify</span>
+            <div class="skill-bar">
+                <span class="skill-per css">
+
+                </span>
+            </div>
+        </div>
+               <div class="skill-box">
+            <span class="title">Machine Learning and AI</span>
+            <div class="skill-bar">
+                <span class="skill-per mlandai">
+                </span>
+            </div>
+        </div>
+               <div class="skill-box">
+            <span class="title">GitHub, JIRA</span>
+            <div class="skill-bar">
+                <span class="skill-per javascript">
+                </span>
+            </div>
+        </div>
+            <div class="skill-box">
+            <span class="title">Postman, Chrome Dev Tools</span>
+            <div class="skill-bar">
+                <span class="skill-per python"></span>
+            </div>
+        </div>
+    </div>
+  </div>
+             </div>
+    </section>
+        <!-- Timeline -->
+  <section class="services" id="timeline">
+      <div class="top">
+              <h2>Timeline</h2><br/>
+       <p>A short summary of my education</p>
+        </div>
+ <div class="timeline">
+        <div class="cont cont-left">
+            <div class="image" style="background-image:url('{{ url_for('static',filename='images/amrita.png')}}')"></div>
+            <div class="content">
+                <span>2019-2023</span>
+                <h2>Amrita Vishwa Vidhyapeetham</h2>
+                <p>
+                        <b>Course</b>:  B.Tech – Computer Science and Engineering<br/>
+	                    <b>Period</b>:  4 years<br/>
+	                    <b>Grade</b> (in CGPA):  8.5/10 (Up to 5th Semester)<br/>
+
+                     </p>
+            </div>
+        </div>
+        <div class="cont cont-right">
+            <div class="image" style="background-image:url('{{ url_for('static',filename='images/allen.png')}}')"></div>
+            <div class="content">
+                <span>2017-2019</span>
+                <h2>Allen Career Institute</h2>
+                <p>
+                        <b>Stream</b>:  Physics, Chemistry, Maths (PCM)<br/>
+	                    <b>Period</b>:  2 years<br/>
+	                    <b>JEE Mains Score</b> (in percentile):  93.85/100<br/>
+                     </p>
+            </div>
+        </div>
+        <div class="cont cont-left">
+            <div class="image" style="background-image:url('{{ url_for('static',filename='images/paavai.png')}}')"></div>
+            <div class="content">
+                <span>2017-2019</span>
+                <h2>Paavai Vidhyashram Global School</h2>
+                <p>
+                    	<b>Stream</b>:  Science<br/>
+	                    <b>Period</b>:  2 years<br/>
+                        <b>Board</b>:  Central Board of Secondary Education<br/>
+	                    <b>Grade</b> (%):  79.4/100<br/>
+
+                </p>
+            </div>
+        </div>
+        <div class="cont cont-right">
+            <div class="image" style="background-image:url('{{ url_for('static',filename='images/chaitanya.png')}}')"></div>
+            <div class="content">
+                <span>2016-2017</span>
+                <h2>Sri Chaitanya International School</h2>
+                <p>
+                    	<b>Period</b>:  1 year<br/>
+	                    <b>Board</b>:  Central Board of Secondary Education<br/>
+	                    <b>Grade</b> (CGPA):  10/10<br/>
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
+     <!-- Papers-->
+<section class="services" id="paper" style="background-color:var(--white)">
+      <div class="top">
+
+           <h2><span class="yellow">Papers </span></h2><br/>
+        <h3>Anomaly Detection in Fraudulent Transactions Using Neural Networks</h3>
+          <p style="line-height:1.4">(Yet to be indexed by Springer)</p><br/>
+           <a href="https://drive.google.com/file/d/1S_ueR03JCdivaDiYxUSkqD-umLpWMAH5/view?usp=sharing" target="_blank"><img src="{{ url_for('static',filename='images/resume.png')}}" /><h3>Download Paper</h3></a>
+
+      </div>
+
+    </section>
+     <!-- Contact-->
+<section class="services" id="contact">
+      <div class="top">
+        <h2>Contact Me</h2><br/>
+        <p><b>Email: </b><a href="mailto:devakumarv@hotmail.com">devakumarv@hotmail.com</a> <b>||</b><a href="mailto:cb.en.u4cse19358@cb.students.amrita.edu"> cb.en.u4cse19358@cb.students.amrita.edu</a></p>
+        <p style="line-height:1.8"><b>Phone Number: </b><a href="tel:+9445686329">9445686329</a></p>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="bottom">
+        <p>Copyright © 2022 Devakumar. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Go To Top -->
+    <div class="scroll-top">
+      <img src="{{ url_for('static',filename='images/arrow-up-outline.svg')}}" alt="" />
+    </div>
+    <!-- Scripts -->
+    <script src="{{ url_for('static',filename='js/main.js')}}"></script>
+  </body>
+</html>
