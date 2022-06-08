@@ -302,6 +302,7 @@ section.services {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+
 }
 .overlay:target {
   visibility: visible;
@@ -317,6 +318,7 @@ section.services {
   width: 50%;
   position: relative;
   transition: all 5s ease-in-out;
+
 }
 
 .popup h2 {
@@ -339,7 +341,7 @@ section.services {
 }
 .popup .content {
   max-height: 30%;
-  overflow: auto;
+
 }
 
 @media (max-width: 768px) {
