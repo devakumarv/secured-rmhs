@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Patient ID</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+
+		.container {
+			margin: 0 auto;
+			max-width: 400px;
+			padding: 20px;
+		}
+
+		h1 {
+			color: #333;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		.form-group {
+			margin-bottom: 20px;
+		}
+
+		.form-group label {
+			display: block;
+			font-size: 16px;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		.form-group input {
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+
+		.submit-button {
+			width: 50%;
+			padding: 10px;
+			font-size: 16px;
+			font-weight: bold;
+			color: #fff;
+			background-color: #4285f4;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		.submit-button:hover {
+			background-color: #3367d6;
+		}
+		 .alert {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Enter Patient ID</h1>
+		     {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <div class="alert alert-danger">
+      {{ messages[0] }}
+    </div>
+  {% endif %}
+{% endwith %}
+
+		<form method="POST">
+			<div class="form-group">
+				<label for="pid">Patient ID:</label>
+				<input type="text" id="pid" name="pid" placeholder="Enter patient ID" required>
+			</div>
+		<center><button class="submit-button" type="submit">Submit</button></center>
+		</form>
+	</div>
+<script>
+   setTimeout(function() {
+        document.querySelector('.alert').remove();
+      }, 3000);
+</script>
+</body>
+</html>

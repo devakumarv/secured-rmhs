@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Login | Secured Remote Healthcare Monitoring System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("{{ url_for('static', filename='images/patient_login.png') }}");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    h1 {
+      font-size: 30px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+      margin-top: 135px;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 300px;
+      padding: 50px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      position: absolute;
+      left: 25%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      max-width: 200px;
+      padding: 10px;
+      margin: 10px auto;
+      text-align: center;
+      color: #fff;
+      background-color: #4285f4;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .alert {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+    .button:hover {
+      background-color: #3367d6;
+    }
+
+    /* Media Queries */
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px;
+      }
+    }
+
+    @media (max-width: 320px) {
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Secured Remote Healthcare Monitoring System | Patient Login Page</h1>
+  <div class="container">
+    <form action="/patient_login" method="POST">
+      {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <div class="alert alert-danger">
+      {{ messages[0] }}
+    </div>
+  {% endif %}
+{% endwith %}
+    <center><h2>Enter your credentials</h2></center>
+    <input type="text" name="username" id="username" class="input-field" placeholder="Username"/>
+    <input type="password" name="password" id="password" class="input-field" placeholder="Password">
+    <button class="button">Login</button>
+      </form>
+  </div>
+<script>
+   setTimeout(function() {
+        document.querySelector('.alert').remove();
+      }, 3000);
+</script>
+</body>
+</html>
